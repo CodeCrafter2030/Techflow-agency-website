@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - TechFlow Solutions</title>
+  <meta name="description" content="Comprehensive technology services including web development, mobile apps, cloud solutions, data analytics, cybersecurity, and IT consulting.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>
+      <span class="material-icons">rocket_launch</span>
+      TechFlow Solutions
+    </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme-toggle-btn" onclick="toggleTheme()">
+        <span class="material-icons">dark_mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Page Title -->
+    <div class="page-title">
+      <div>
+        <span class="material-icons">build</span>
+        Our Services
+      </div>
+      <p class="text-light">Comprehensive technology solutions tailored to your business needs</p>
+    </div>
+
+    <!-- Services Overview -->
+    <section class="mt-32">
+      <div class="services-grid">
+        <!-- Web Development -->
+        <div class="service-card">
+          <h3>
+            <span class="material-icons">code</span>
+            Web Development
+          </h3>
+          <p>Custom web applications built with modern technologies and best practices. From responsive websites to complex enterprise solutions.</p>
+          
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Technologies</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+              <span class="badge info">React</span>
+              <span class="badge info">Vue.js</span>
+              <span class="badge info">Angular</span>
+              <span class="badge info">Node.js</span>
+              <span class="badge info">Python</span>
+              <span class="badge info">PHP</span>
+            </div>
+          </div>
+
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Features</h4>
+            <ul style="color: var(--text-light); padding-left: 1.5rem;">
+              <li>Responsive design for all devices</li>
+              <li>SEO optimization</li>
+              <li>Performance optimization</li>
+              <li>Security best practices</li>
+              <li>Content management systems</li>
+              <li>E-commerce solutions</li>
+            </ul>
+          </div>
+
+          <div class="mt-24">
+            <a href="contact.html" class="btn">
+              <span class="material-icons">arrow_forward</span>
+              Get Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="service-card">
+          <h3>
+            <span class="material-icons">smartphone</span>
+            Mobile Development
+          </h3>
+          <p>Native and cross-platform mobile applications that deliver exceptional user experiences across iOS and Android platforms.</p>
+          
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Platforms</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+              <span class="badge info">iOS</span>
+              <span class="badge info">Android</span>
+              <span class="badge info">React Native</span>
+              <span class="badge info">Flutter</span>
+              <span class="badge info">Xamarin</span>
+            </div>
+          </div>
+
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Features</h4>
+            <ul style="color: var(--text-light); padding-left: 1.5rem;">
+              <li>Native performance</li>
+              <li>Offline functionality</li>
+              <li>Push notifications</li>
+              <li>App store optimization</li>
+              <li>Cross-platform compatibility</li>
+              <li>Real-time synchronization</li>
+            </ul>
+          </div>
+
+          <div class="mt-24">
+            <a href="contact.html" class="btn">
+              <span class="material-icons">arrow_forward</span>
+              Get Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- Cloud Solutions -->
+        <div class="service-card">
+          <h3>
+            <span class="material-icons">cloud</span>
+            Cloud Solutions
+          </h3>
+          <p>Scalable cloud infrastructure and migration services to help businesses leverage the power of cloud computing.</p>
+          
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Platforms</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+              <span class="badge info">AWS</span>
+              <span class="badge info">Azure</span>
+              <span class="badge info">Google Cloud</span>
+              <span class="badge info">Docker</span>
+              <span class="badge info">Kubernetes</span>
+            </div>
+          </div>
+
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Services</h4>
+            <ul style="color: var(--text-light); padding-left: 1.5rem;">
+              <li>Cloud migration strategy</li>
+              <li>Infrastructure as Code</li>
+              <li>Serverless architecture</li>
+              <li>Auto-scaling solutions</li>
+              <li>Disaster recovery</li>
+              <li>Cost optimization</li>
+            </ul>
+          </div>
+
+          <div class="mt-24">
+            <a href="contact.html" class="btn">
+              <span class="material-icons">arrow_forward</span>
+              Get Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- Data Analytics -->
+        <div class="service-card">
+          <h3>
+            <span class="material-icons">analytics</span>
+            Data Analytics
+          </h3>
+          <p>Transform your data into actionable insights with advanced analytics and business intelligence solutions.</p>
+          
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Tools</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+              <span class="badge info">BigQuery</span>
+              <span class="badge info">Tableau</span>
+              <span class="badge info">Power BI</span>
+              <span class="badge info">Python</span>
+              <span class="badge info">R</span>
+            </div>
+          </div>
+
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Solutions</h4>
+            <ul style="color: var(--text-light); padding-left: 1.5rem;">
+              <li>Data warehousing</li>
+              <li>Predictive analytics</li>
+              <li>Real-time dashboards</li>
+              <li>Machine learning models</li>
+              <li>Data visualization</li>
+              <li>Performance metrics</li>
+            </ul>
+          </div>
+
+          <div class="mt-24">
+            <a href="contact.html" class="btn">
+              <span class="material-icons">arrow_forward</span>
+              Get Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="service-card">
+          <h3>
+            <span class="material-icons">security</span>
+            Cybersecurity
+          </h3>
+          <p>Comprehensive security solutions to protect your digital assets and ensure compliance with industry standards.</p>
+          
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Services</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+              <span class="badge info">Penetration Testing</span>
+              <span class="badge info">Vulnerability Assessment</span>
+              <span class="badge info">Security Audits</span>
+              <span class="badge info">Incident Response</span>
+            </div>
+          </div>
+
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Features</h4>
+            <ul style="color: var(--text-light); padding-left: 1.5rem;">
+              <li>Security assessments</li>
+              <li>Compliance frameworks</li>
+              <li>Threat monitoring</li>
+              <li>Security training</li>
+              <li>Risk management</li>
+              <li>24/7 monitoring</li>
+            </ul>
+          </div>
+
+          <div class="mt-24">
+            <a href="contact.html" class="btn">
+              <span class="material-icons">arrow_forward</span>
+              Get Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- IT Consulting -->
+        <div class="service-card">
+          <h3>
+            <span class="material-icons">support_agent</span>
+            IT Consulting
+          </h3>
+          <p>Strategic technology consulting to align your IT initiatives with business goals and drive digital transformation.</p>
+          
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Areas</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+              <span class="badge info">Strategy</span>
+              <span class="badge info">Architecture</span>
+              <span class="badge info">Optimization</span>
+              <span class="badge info">Transformation</span>
+            </div>
+          </div>
+
+          <div class="mt-24">
+            <h4 style="color: var(--text); margin-bottom: 1rem;">Services</h4>
+            <ul style="color: var(--text-light); padding-left: 1.5rem;">
+              <li>Technology strategy</li>
+              <li>System architecture</li>
+              <li>Process optimization</li>
+              <li>Digital transformation</li>
+              <li>Technology selection</li>
+              <li>Project management</li>
+            </ul>
+          </div>
+
+          <div class="mt-24">
+            <a href="contact.html" class="btn">
+              <span class="material-icons">arrow_forward</span>
+              Get Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="mt-32">
+      <div class="page-title">
+        <div>
+          <span class="material-icons">payments</span>
+          Pricing Plans
+        </div>
+        <p class="text-light">Flexible pricing options to suit your project requirements</p>
+      </div>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <!-- Basic Plan -->
+        <div class="card">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <h3 style="color: var(--text); margin-bottom: 0.5rem;">Basic</h3>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem;">$2,500</div>
+            <p class="text-light">Perfect for small projects</p>
+          </div>
+          
+          <ul style="color: var(--text-light); margin-bottom: 2rem; padding-left: 1.5rem;">
+            <li>Basic website or app</li>
+            <li>Responsive design</li>
+            <li>Basic SEO optimization</li>
+            <li>1 month support</li>
+            <li>Basic documentation</li>
+          </ul>
+          
+          <a href="contact.html" class="btn" style="width: 100%; justify-content: center;">
+            <span class="material-icons">shopping_cart</span>
+            Choose Basic
+          </a>
+        </div>
+
+        <!-- Professional Plan -->
+        <div class="card" style="border: 2px solid var(--accent); position: relative;">
+          <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--accent); color: white; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 600;">Most Popular</div>
+          
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <h3 style="color: var(--text); margin-bottom: 0.5rem;">Professional</h3>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem;">$8,500</div>
+            <p class="text-light">Ideal for growing businesses</p>
+          </div>
+          
+          <ul style="color: var(--text-light); margin-bottom: 2rem; padding-left: 1.5rem;">
+            <li>Advanced features</li>
+            <li>Custom integrations</li>
+            <li>Advanced SEO</li>
+            <li>3 months support</li>
+            <li>Performance optimization</li>
+            <li>Security implementation</li>
+          </ul>
+          
+          <a href="contact.html" class="btn" style="width: 100%; justify-content: center;">
+            <span class="material-icons">shopping_cart</span>
+            Choose Professional
+          </a>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="card">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <h3 style="color: var(--text); margin-bottom: 0.5rem;">Enterprise</h3>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem;">Custom</div>
+            <p class="text-light">For large-scale projects</p>
+          </div>
+          
+          <ul style="color: var(--text-light); margin-bottom: 2rem; padding-left: 1.5rem;">
+            <li>Custom development</li>
+            <li>Scalable architecture</li>
+            <li>Advanced security</li>
+            <li>12 months support</li>
+            <li>Dedicated team</li>
+            <li>Priority support</li>
+          </ul>
+          
+          <a href="contact.html" class="btn" style="width: 100%; justify-content: center;">
+            <span class="material-icons">contact_support</span>
+            Contact Sales
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="mt-32">
+      <div class="page-title">
+        <div>
+          <span class="material-icons">timeline</span>
+          Our Process
+        </div>
+        <p class="text-light">How we deliver exceptional results for our clients</p>
+      </div>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+        <div class="card">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <div style="background: var(--accent); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">1</div>
+            <h3 style="color: var(--text); margin: 0;">Discovery</h3>
+          </div>
+          <p class="text-light">We start by understanding your business goals, requirements, and challenges to create a tailored solution.</p>
+        </div>
+
+        <div class="card">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <div style="background: var(--accent); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">2</div>
+            <h3 style="color: var(--text); margin: 0;">Planning</h3>
+          </div>
+          <p class="text-light">We create detailed project plans, architecture designs, and timelines to ensure successful delivery.</p>
+        </div>
+
+        <div class="card">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <div style="background: var(--accent); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">3</div>
+            <h3 style="color: var(--text); margin: 0;">Development</h3>
+          </div>
+          <p class="text-light">Our expert team builds your solution using modern technologies and best practices.</p>
+        </div>
+
+        <div class="card">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <div style="background: var(--accent); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">4</div>
+            <h3 style="color: var(--text); margin: 0;">Testing</h3>
+          </div>
+          <p class="text-light">Rigorous testing ensures your solution meets quality standards and performs flawlessly.</p>
+        </div>
+
+        <div class="card">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <div style="background: var(--accent); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">5</div>
+            <h3 style="color: var(--text); margin: 0;">Deployment</h3>
+          </div>
+          <p class="text-light">We deploy your solution to production with minimal downtime and maximum reliability.</p>
+        </div>
+
+        <div class="card">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <div style="background: var(--accent); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">6</div>
+            <h3 style="color: var(--text); margin: 0;">Support</h3>
+          </div>
+          <p class="text-light">Ongoing support and maintenance to keep your solution running smoothly and efficiently.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="mt-32 text-center">
+      <div class="card" style="background: var(--gradient-secondary); border: 1px solid var(--accent);">
+        <h2 style="color: var(--text); margin-bottom: 1rem; font-size: 2rem;">Ready to Get Started?</h2>
+        <p class="text-light" style="margin-bottom: 2rem; font-size: 1.1rem;">Let's discuss your project requirements and find the perfect solution for your business.</p>
+        <a href="contact.html" class="btn" style="font-size: 1.1rem; padding: 1rem 2rem;">
+          <span class="material-icons">send</span>
+          Start Your Project
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <h3 style="color: var(--text); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-icons">rocket_launch</span>
+            TechFlow Solutions
+          </h3>
+          <p class="text-light">Innovative technology solutions for modern businesses. We help organizations leverage technology to achieve their goals.</p>
+        </div>
+        
+        <div>
+          <h4 style="color: var(--text); margin-bottom: 1rem;">Services</h4>
+          <ul style="list-style: none; padding: 0; color: var(--text-light);">
+            <li style="margin-bottom: 0.5rem;">Web Development</li>
+            <li style="margin-bottom: 0.5rem;">Mobile Development</li>
+            <li style="margin-bottom: 0.5rem;">Cloud Solutions</li>
+            <li style="margin-bottom: 0.5rem;">Data Analytics</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="color: var(--text); margin-bottom: 1rem;">Company</h4>
+          <ul style="list-style: none; padding: 0; color: var(--text-light);">
+            <li style="margin-bottom: 0.5rem;"><a href="about.html" style="color: var(--text-light); text-decoration: none;">About Us</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="projects.html" style="color: var(--text-light); text-decoration: none;">Our Projects</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="contact.html" style="color: var(--text-light); text-decoration: none;">Contact</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="careers.html" style="color: var(--text-light); text-decoration: none;">Careers</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="color: var(--text); margin-bottom: 1rem;">Contact Info</h4>
+          <div style="color: var(--text-light);">
+            <p style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span class="material-icons" style="font-size: 1rem;">email</span>
+              info@techflowsolutions.com
+            </p>
+            <p style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span class="material-icons" style="font-size: 1rem;">phone</span>
+              +1 (555) 123-4567
+            </p>
+            <p style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span class="material-icons" style="font-size: 1rem;">location_on</span>
+              San Francisco, CA
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div style="border-top: 1px solid var(--border); padding-top: 1rem; text-align: center; color: var(--text-light);">
+        <p>&copy; 2024 TechFlow Solutions. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Theme Toggle Function
+    function toggleTheme() {
+      const body = document.body;
+      const themeBtn = document.querySelector('.theme-toggle-btn .material-icons');
+      
+      if (body.classList.contains('light-theme')) {
+        body.classList.remove('light-theme');
+        themeBtn.textContent = 'dark_mode';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.classList.add('light-theme');
+        themeBtn.textContent = 'light_mode';
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    // Load saved theme
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedTheme = localStorage.getItem('theme');
+      const themeBtn = document.querySelector('.theme-toggle-btn .material-icons');
+      
+      if (savedTheme === 'light') {
+        document.body.classList.add('light-theme');
+        themeBtn.textContent = 'light_mode';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Kohinoor Pvt. Limited</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <h1>Kohinoor pvt. limited</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="btn">Login</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="page-title">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:48px;height:48px;background:linear-gradient(135deg,var(--accent),#60a5fa);border-radius:12px;display:flex;align-items:center;justify-content:center;">
+          <span class="material-icons" style="font-size:24px;color:white;">inventory_2</span>
+        </div>
+        <div>
+          <div style="font-size:1.875rem;font-weight:700;color:var(--text);">Product Catalog</div>
+          <div style="font-size:0.9rem;color:var(--text-light);">Browse and manage our pesticide solutions</div>
+        </div>
+      </div>
+      <div class="icon-btn">
+        <a class="btn" href="product-manager-dashboard.html">
+          <span class="material-icons" style="font-size:18px;">dashboard_customize</span> 
+          Manage Products
+        </a>
+      </div>
+    </div>
+    <div class="toolbar mt-16">
+      <input class="input" type="text" placeholder="Search products..." style="min-width:200px;">
+      <select class="select">
+        <option value="">All Types</option>
+        <option>Insecticide</option>
+        <option>Herbicide</option>
+        <option>Fungicide</option>
+        <option>Organic</option>
+      </select>
+      <div class="spacer"></div>
+      <a href="login.html" class="btn icon-btn"><span class="material-icons" style="font-size:18px;">login</span> Sign in to manage</a>
+    </div>
+
+    <div class="card mt-16">
+      <table class="table">
+        <thead>
+          <tr>
+            <th style="width:60px;">Image</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Price (₹)</th>
+            <th>Availability</th>
+            <th style="width:180px;text-align:right;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="image1.webp" alt="Pesticide A" style="width:42px;height:42px;object-fit:cover;border-radius:6px;border:1px solid var(--secondary);background:#fff;"></td>
+            <td><strong style="color:var(--text);">Pesticide A</strong><div style="font-size:12px;color:var(--text-light);">Broad-spectrum, crop-safe</div></td>
+            <td>Insecticide</td>
+            <td>500</td>
+            <td><span class="badge success">In Stock</span></td>
+            <td>
+              <div class="actions">
+                <button class="btn icon-btn"><span class="material-icons" style="font-size:16px;">shopping_cart</span> Order</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="image2.webp" alt="Pesticide B" style="width:42px;height:42px;object-fit:cover;border-radius:6px;border:1px solid var(--secondary);background:#fff;"></td>
+            <td><strong style="color:var(--text);">Pesticide B</strong><div style="font-size:12px;color:var(--text-light);">Fruit & vegetable protection</div></td>
+            <td>Insecticide</td>
+            <td>700</td>
+            <td><span class="badge warning">Out of Stock</span></td>
+            <td>
+              <div class="actions">
+                <button class="btn icon-btn"><span class="material-icons" style="font-size:16px;">outgoing_mail</span> Request</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="image3.webp" alt="Pesticide C" style="width:42px;height:42px;object-fit:cover;border-radius:6px;border:1px solid var(--secondary);background:#fff;"></td>
+            <td><strong style="color:var(--text);">Pesticide C</strong><div style="font-size:12px;color:var(--text-light);">Organic and soil-friendly</div></td>
+            <td>Organic</td>
+            <td>650</td>
+            <td><span class="badge success">In Stock</span></td>
+            <td>
+              <div class="actions">
+                <button class="btn icon-btn"><span class="material-icons" style="font-size:16px;">shopping_cart</span> Order</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Kohinoor private limited | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - TechFlow Solutions</title>
+  <meta name="description" content="Get in touch with TechFlow Solutions. Contact us for technology consulting, project inquiries, or support.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>
+      <span class="material-icons">rocket_launch</span>
+      TechFlow Solutions
+    </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <button class="theme-toggle-btn" onclick="toggleTheme()">
+        <span class="material-icons">dark_mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Page Title -->
+    <div class="page-title">
+      <div>
+        <span class="material-icons">contact_support</span>
+        Contact Us
+      </div>
+      <p class="text-light">Get in touch with our team to discuss your project requirements</p>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="mt-32">
+      <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 3rem;">
+        <!-- Contact Form -->
+        <div class="card">
+          <h2 style="color: var(--text); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-icons">send</span>
+            Send us a Message
+          </h2>
+          
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+              <div>
+                <label for="firstName" style="display: block; margin-bottom: 0.5rem; color: var(--text); font-weight: 500;">First Name *</label>
+                <input type="text" id="firstName" name="firstName" class="input" required>
+              </div>
+              <div>
+                <label for="lastName" style="display: block; margin-bottom: 0.5rem; color: var(--text); font-weight: 500;">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" class="input" required>
+              </div>
+            </div>
+            
+            <div style="margin-bottom: 1rem;">
+              <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--text); font-weight: 500;">Email Address *</label>
+              <input type="email" id="email" name="email" class="input" required>
+            </div>
+            
+            <div style="margin-bottom: 1rem;">
+              <label for="phone" style="display: block; margin-bottom: 0.5rem; color: var(--text); font-weight: 500;">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="input">
+            </div>
+            
+            <div style="margin-bottom: 1rem;">
+              <label for="company" style="display: block; margin-bottom: 0.5rem; color: var(--text); font-weight: 500;">Company</label>
+              <input type="text" id="company" name="company" class="input">
+            </div>
+            
+            <div style="margin-bottom: 1rem;">
+              <label for="service" style="display: block; margin-bottom: 0.5rem; color: var(--text); font-weight: 500;">Service Interest *</label>
+              <select id="service" name="service" class="select" required>
+                <option value="">Select a service</option>
+                <option value="web-development">Web Development</option>
+                <option value="mobile-development">Mobile Development</option>
+                <option value="cloud-solutions">Cloud Solutions</option>
+                <option value="data-analytics">Data Analytics</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="it-consulting">IT Consulting</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div style="margin-bottom: 1rem;">
+              <label for="budget" style="display: block; margin-bottom: 0.5rem; color: var(--text); font-weight: 500;">Project Budget</label>
+              <select id="budget" name="budget" class="select">
+                <option value="">Select budget range</option>
+                <option value="under-5k">Under $5,000</option>
+                <option value="5k-15k">$5,000 - $15,000</option>
+                <option value="15k-50k">$15,000 - $50,000</option>
+                <option value="50k-100k">$50,000 - $100,000</option>
+                <option value="over-100k">Over $100,000</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label for="message" style="display: block; margin-bottom: 0.5rem; color: var(--text); font-weight: 500;">Project Details *</label>
+              <textarea id="message" name="message" class="input" rows="5" placeholder="Tell us about your project requirements, goals, and timeline..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn" style="width: 100%; justify-content: center;">
+              <span class="material-icons">send</span>
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <!-- Company Info -->
+          <div class="card" style="margin-bottom: 2rem;">
+            <h3 style="color: var(--text); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span class="material-icons">business</span>
+              Get in Touch
+            </h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="background: var(--accent); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <span class="material-icons">email</span>
+                </div>
+                <div>
+                  <h4 style="color: var(--text); margin: 0 0 0.25rem 0;">Email</h4>
+                  <p style="color: var(--text-light); margin: 0;">info@techflowsolutions.com</p>
+                  <p style="color: var(--text-light); margin: 0; font-size: 0.9rem;">support@techflowsolutions.com</p>
+                </div>
+              </div>
+              
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="background: var(--accent); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <span class="material-icons">phone</span>
+                </div>
+                <div>
+                  <h4 style="color: var(--text); margin: 0 0 0.25rem 0;">Phone</h4>
+                  <p style="color: var(--text-light); margin: 0;">+1 (555) 123-4567</p>
+                  <p style="color: var(--text-light); margin: 0; font-size: 0.9rem;">Mon-Fri: 9AM-6PM PST</p>
+                </div>
+              </div>
+              
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="background: var(--accent); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <span class="material-icons">location_on</span>
+                </div>
+                <div>
+                  <h4 style="color: var(--text); margin: 0 0 0.25rem 0;">Office</h4>
+                  <p style="color: var(--text-light); margin: 0;">123 Tech Street</p>
+                  <p style="color: var(--text-light); margin: 0;">San Francisco, CA 94105</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Contact -->
+          <div class="card">
+            <h3 style="color: var(--text); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span class="material-icons">schedule</span>
+              Quick Contact
+            </h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <a href="tel:+15551234567" class="btn btn-secondary" style="justify-content: center;">
+                <span class="material-icons">phone</span>
+                Call Now
+              </a>
+              
+              <a href="mailto:info@techflowsolutions.com" class="btn btn-secondary" style="justify-content: center;">
+                <span class="material-icons">email</span>
+                Email Us
+              </a>
+              
+              <a href="#" class="btn btn-secondary" style="justify-content: center;" onclick="openChat()">
+                <span class="material-icons">chat</span>
+                Live Chat
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="mt-32">
+      <div class="page-title">
+        <div>
+          <span class="material-icons">help</span>
+          Frequently Asked Questions
+        </div>
+        <p class="text-light">Common questions about our services and process</p>
+      </div>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.5rem;">
+        <div class="card">
+          <h4 style="color: var(--text); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-icons" style="color: var(--accent);">schedule</span>
+            How long does a typical project take?
+          </h4>
+          <p class="text-light">Project timelines vary based on complexity. Simple websites take 2-4 weeks, while complex applications can take 3-6 months. We provide detailed timelines during the planning phase.</p>
+        </div>
+
+        <div class="card">
+          <h4 style="color: var(--text); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-icons" style="color: var(--accent);">payments</span>
+            What are your payment terms?
+          </h4>
+          <p class="text-light">We typically require 50% upfront and 50% upon completion. For larger projects, we offer milestone-based payments. We accept major credit cards, bank transfers, and digital payments.</p>
+        </div>
+
+        <div class="card">
+          <h4 style="color: var(--text); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-icons" style="color: var(--accent);">support</span>
+            Do you provide ongoing support?
+          </h4>
+          <p class="text-light">Yes, we offer various support packages including maintenance, updates, and technical support. We also provide training and documentation to help your team manage the solution.</p>
+        </div>
+
+        <div class="card">
+          <h4 style="color: var(--text); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-icons" style="color: var(--accent);">security</span>
+            How do you ensure project security?
+          </h4>
+          <p class="text-light">We follow industry best practices for security, including secure development methodologies, regular security audits, and compliance with relevant standards like GDPR and SOC 2.</p>
+        </div>
+
+        <div class="card">
+          <h4 style="color: var(--text); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-icons" style="color: var(--accent);">language</span>
+            Do you work with international clients?
+          </h4>
+          <p class="text-light">Yes, we work with clients worldwide. We have experience with different time zones and can accommodate various communication preferences and project requirements.</p>
+        </div>
+
+        <div class="card">
+          <h4 style="color: var(--text); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-icons" style="color: var(--accent);">update</span>
+            Can you help with existing projects?
+          </h4>
+          <p class="text-light">Absolutely! We can help improve, maintain, or scale existing applications. We'll assess your current system and provide recommendations for optimization and enhancement.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="mt-32">
+      <div class="page-title">
+        <div>
+          <span class="material-icons">map</span>
+          Visit Our Office
+        </div>
+        <p class="text-light">Schedule a meeting or drop by for a coffee</p>
+      </div>
+
+      <div class="card" style="padding: 0; overflow: hidden;">
+        <div style="background: var(--card-alt); padding: 2rem; text-align: center;">
+          <h3 style="color: var(--text); margin-bottom: 1rem;">TechFlow Solutions</h3>
+          <p style="color: var(--text-light); margin-bottom: 1.5rem;">123 Tech Street, San Francisco, CA 94105</p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <span class="badge info">Downtown SF</span>
+            <span class="badge info">Tech District</span>
+            <span class="badge info">Public Transit</span>
+            <span class="badge info">Parking Available</span>
+          </div>
+        </div>
+        <div style="height: 300px; background: linear-gradient(135deg, var(--accent), #06b6d4); display: flex; align-items: center; justify-content: center; color: white;">
+          <div style="text-align: center;">
+            <span class="material-icons" style="font-size: 4rem; margin-bottom: 1rem;">map</span>
+            <p style="font-size: 1.1rem; margin: 0;">Interactive Map Coming Soon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <h3 style="color: var(--text); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-icons">rocket_launch</span>
+            TechFlow Solutions
+          </h3>
+          <p class="text-light">Innovative technology solutions for modern businesses. We help organizations leverage technology to achieve their goals.</p>
+        </div>
+        
+        <div>
+          <h4 style="color: var(--text); margin-bottom: 1rem;">Services</h4>
+          <ul style="list-style: none; padding: 0; color: var(--text-light);">
+            <li style="margin-bottom: 0.5rem;">Web Development</li>
+            <li style="margin-bottom: 0.5rem;">Mobile Development</li>
+            <li style="margin-bottom: 0.5rem;">Cloud Solutions</li>
+            <li style="margin-bottom: 0.5rem;">Data Analytics</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="color: var(--text); margin-bottom: 1rem;">Company</h4>
+          <ul style="list-style: none; padding: 0; color: var(--text-light);">
+            <li style="margin-bottom: 0.5rem;"><a href="about.html" style="color: var(--text-light); text-decoration: none;">About Us</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="projects.html" style="color: var(--text-light); text-decoration: none;">Our Projects</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="contact.html" style="color: var(--text-light); text-decoration: none;">Contact</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="careers.html" style="color: var(--text-light); text-decoration: none;">Careers</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="color: var(--text); margin-bottom: 1rem;">Contact Info</h4>
+          <div style="color: var(--text-light);">
+            <p style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span class="material-icons" style="font-size: 1rem;">email</span>
+              info@techflowsolutions.com
+            </p>
+            <p style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span class="material-icons" style="font-size: 1rem;">phone</span>
+              +1 (555) 123-4567
+            </p>
+            <p style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span class="material-icons" style="font-size: 1rem;">location_on</span>
+              San Francisco, CA
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div style="border-top: 1px solid var(--border); padding-top: 1rem; text-align: center; color: var(--text-light);">
+        <p>&copy; 2024 TechFlow Solutions. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Theme Toggle Function
+    function toggleTheme() {
+      const body = document.body;
+      const themeBtn = document.querySelector('.theme-toggle-btn .material-icons');
+      
+      if (body.classList.contains('light-theme')) {
+        body.classList.remove('light-theme');
+        themeBtn.textContent = 'dark_mode';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.classList.add('light-theme');
+        themeBtn.textContent = 'light_mode';
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    // Load saved theme
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedTheme = localStorage.getItem('theme');
+      const themeBtn = document.querySelector('.theme-toggle-btn .material-icons');
+      
+      if (savedTheme === 'light') {
+        document.body.classList.add('light-theme');
+        themeBtn.textContent = 'light_mode';
+      }
+    });
+
+    // Form submission handler
+    function handleSubmit(event) {
+      event.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(event.target);
+      const data = Object.fromEntries(formData);
+      
+      // Show success message
+      alert('Thank you for your message! We will get back to you within 24 hours.');
+      
+      // Reset form
+      event.target.reset();
+    }
+
+    // Live chat function
+    function openChat() {
+      alert('Live chat feature coming soon! For immediate assistance, please call us at +1 (555) 123-4567 or email info@techflowsolutions.com');
+    }
+
+    // Add some interactivity to the form
+    document.addEventListener('DOMContentLoaded', function() {
+      const inputs = document.querySelectorAll('.input, .select');
+      
+      inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+          this.parentElement.style.transform = 'translateY(-2px)';
+        });
+        
+        input.addEventListener('blur', function() {
+          this.parentElement.style.transform = 'translateY(0)';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
